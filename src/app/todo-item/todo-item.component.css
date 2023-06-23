@@ -1,0 +1,31 @@
+:host {
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.remove {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  background: #F44336;
+  color: #fff;
+  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 34px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.body ul li:hover .remove {
+  visibility: visible;
+}
+
+.body ul li.done {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: line-through;
+}
